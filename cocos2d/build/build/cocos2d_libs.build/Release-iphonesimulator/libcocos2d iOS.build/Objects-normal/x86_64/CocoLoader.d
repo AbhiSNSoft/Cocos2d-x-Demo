@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/build/../cocos/platform/ios/cocos2d-prefix.pch \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/cocos/editor-support/cocostudio/CocoLoader.cpp \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/cocos/editor-support/cocostudio/CocoLoader.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/document-wrapper.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/rapidjson.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/document.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/reader.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/allocators.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/stream.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/encodings.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/encodedstream.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/memorystream.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/meta.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/../rapidjson.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/stack.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/../allocators.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/swap.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/strtod.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/ieee754.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/biginteger.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/diyfp.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/pow10.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/error/error.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/error/../rapidjson.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/strfunc.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/external/json/internal/../stream.h \
+  /Users/chinnuabhi/Workspace/Hybrid/cocos2d-x/demoCPP/cocos2d/cocos/editor-support/cocostudio/CocosStudioExport.h
