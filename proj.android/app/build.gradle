@@ -3,35 +3,35 @@ import org.gradle.internal.os.OperatingSystem
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion PROP_COMPILE_SDK_VERSION.toInteger()
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "com.demo.test"
-        minSdkVersion PROP_MIN_SDK_VERSION
-        targetSdkVersion PROP_TARGET_SDK_VERSION
+        minSdkVersion 16
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
 
         externalNativeBuild {
-            if (PROP_BUILD_TYPE == 'ndk-build') {
-                ndkBuild {
-                    targets 'MyGame'
-                    arguments 'NDK_TOOLCHAIN_VERSION=clang'
-                    arguments '-j' + Runtime.runtime.availableProcessors()
-
-                    def module_paths = [project.file("../../cocos2d").absolutePath,
-                                        project.file("../../cocos2d/cocos").absolutePath,
-                                        project.file("../../cocos2d/external").absolutePath]
-                    if (OperatingSystem.current().isWindows()) {
-                        module_paths = module_paths.collect {it.replaceAll('\\\\', '/')}
-                        arguments 'NDK_MODULE_PATH=' + module_paths.join(";")
-                    }
-                    else {
-                        arguments 'NDK_MODULE_PATH=' + module_paths.join(':')
-                    }
-                }
-            }
-            else if (PROP_BUILD_TYPE == 'cmake') {
+//            if (PROP_BUILD_TYPE == 'ndk-build') {
+//                ndkBuild {
+//                    targets 'MyGame'
+//                    arguments 'NDK_TOOLCHAIN_VERSION=clang'
+//                    arguments '-j' + Runtime.runtime.availableProcessors()
+//
+//                    def module_paths = [project.file("../../cocos2d").absolutePath,
+//                                        project.file("../../cocos2d/cocos").absolutePath,
+//                                        project.file("../../cocos2d/external").absolutePath]
+//                    if (OperatingSystem.current().isWindows()) {
+//                        module_paths = module_paths.collect {it.replaceAll('\\\\', '/')}
+//                        arguments 'NDK_MODULE_PATH=' + module_paths.join(";")
+//                    }
+//                    else {
+//                        arguments 'NDK_MODULE_PATH=' + module_paths.join(':')
+//                    }
+//                }
+//            }
+//            else if (PROP_BUILD_TYPE == 'cmake') {
                 cmake {
                     targets 'MyGame'
                     arguments "-DCMAKE_FIND_ROOT_PATH=",
@@ -40,7 +40,7 @@ android {
                             "-DANDROID_ARM_NEON=TRUE"
                     cppFlags "-frtti -fexceptions -fsigned-char"
                 }
-            }
+//            }
         }
 
         ndk {
@@ -57,16 +57,16 @@ android {
     }
 
     externalNativeBuild {
-        if (PROP_BUILD_TYPE == 'ndk-build') {
-            ndkBuild {
-                path "jni/Android.mk"
-            }
-        }
-        else if (PROP_BUILD_TYPE == 'cmake') {
+//        if (PROP_BUILD_TYPE == 'ndk-build') {
+//            ndkBuild {
+//                path "jni/Android.mk"
+//            }
+//        }
+//        else if (PROP_BUILD_TYPE == 'cmake') {
             cmake {
                 path "../../CMakeLists.txt"
             }
-        }
+//        }
     }
 
     signingConfigs {
